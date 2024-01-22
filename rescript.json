@@ -1,7 +1,7 @@
 {
-    "name": "my-rescript-react-native-app",
-    "reason": {
-        "react-jsx": 3
+    "name": "rescript-react-native-expo-nativewind-template",
+    "jsx": {
+        "version": 4
     },
     "package-specs": {
         "module": "es6",

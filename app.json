@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Elapse",
-    "slug": "Elapse",
+    "name": "rescript-react-native-expo-nativewind-template",
+    "slug": "rescript-react-native-expo-nativewind-template",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

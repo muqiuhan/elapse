@@ -1,11 +1,10 @@
-type styledProps = {
+type default_style = {
   className?: string,
-  source?: string,
   children?: React.element,
 }
 
 @module("nativewind")
-external styled: React.component<'a> => React.component<styledProps> = "styled"
+external styled: React.component<'a> => React.component<default_style> = "styled"
 
 module StyledText = {
   let make = styled(ReactNative.Text.make)
@@ -16,5 +15,13 @@ module StyledView = {
 }
 
 module StyledImage = {
-  let make = styled(ReactNative.Image.make)
+  type props = {
+    source?: string,
+    ...default_style,
+  }
+
+  @module("nativewind")
+  external styled: React.component<'a> => React.component<props> = "styled"
+
+  let make: React.component<props> = styled(ReactNative.Image.make)
 }
